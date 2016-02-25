@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+	var defaultAccModel = {
+		id:"",
+		name:"",
+		phone:""
+	};
+
+   $("#defaultAccDiv").find("input[type='hidden']").each(function(){
+   		defaultAccModel[this.name] =  this.value;
+   })
+
+   console.log(defaultAccModel);
+
+});
+</script>
+</head>
+<body>
+<div id="defaultAccDiv">
+<input name="id" type="hidden" value="gogobox555" >
+<input name="name" type="hidden" value="Johnathan" >
+<input name="phone" type="hidden" value="0925166903" >
+</div>
+</body>
+</html>
